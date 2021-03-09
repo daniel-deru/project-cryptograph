@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./encode/encode.css">
+   
+    <title>encoder</title>
+</head>
+<body>
+    <header>
+        <div id="name">
+            <h4>&lt;cryptograph&gt;</h4>
+        </div>
+
+       
+
+        <nav>
+            <div id="help"><a href="./help.html">?</a></div>
+            
+            <div id="main-button">
+                <button type="button" id="scramble-button" >encrypt</button>
+            </div>
+    
+         
+                <div id="encode-decode-container">
+                    <span >encode</span>
+                     <ul>
+                        <li><a href="./encode.html">encoder</a></li>
+                        <li><a href="./decode.html">decoder</a></li>
+                    </ul>
+                </div>
+        
+                <div id="base">
+                    <span>morse</span>
+                    <ul>
+                        <li tabindex="0">morse</li>
+                        <li tabindex="0">roman</li>
+                        <li tabindex="0">binary</li>
+                        <li tabindex="0">octal</li>
+                        <li tabindex="0">decimal</li>
+                        <li tabindex="0">hex</li>
+                    </ul>
+                </div>
+        </nav>
+        
+       
+    </header>
+
+
+    <div id="container">
+
+        <div>
+            <label for="textarea">message</label>
+            <textarea type="text" id="message" rows="2" cols="35" onkeypress="grow()" onkeyup="grow()" placeholder="enter your message"></textarea>
+        </div>
+
+        <div id="keys">
+            <div>
+                <label for="keys">keys</label>
+            </div>
+
+        <div id="inputs">
+            <input type="text" id="k1" placeholder="dot">
+            <input type="text" id="k2" placeholder="dash">
+            <input type="text" id="k3" placeholder="letter">
+            <input type="text" id="k4" placeholder="word">
+        </div>
+          
+        </div>
+    </div>
+
+
+    <div id="secret-key">
+        <p>your secret key:</p>
+        <span></span>
+    </div>
+
+    <div id="result">
+        <span>result:</span>
+        <p><pre id="morse"></pre></p>
+    </div>
+
+    
+
+    <script src="./encode/encode.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+        --brightGreen: rgb(0, 255, 0);
+        --primary:rgb(0, 0, 0);
+        --secondary: rgb(0, 200, 0);
+        --primary2: rgb(46, 46, 46);
+        --secondary2:  rgba(0, 255, 0, .5);
+}
+
+body {
+    font-size: 1.2em;
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+h2, h3 {
+    /* font-family: 'Teko', sans-serif; */
+    font-family: 'DotGothic16', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+section {
+    /* font-family: 'Teko', sans-serif; */
+    font-family: 'DotGothic16', sans-serif;
+    margin:2.5em auto;
+}
+
+section > h3 {
+    margin: .6em auto;
+    width: 20rem;
+    font-size: 3em;
+}
+
+p {
+    /* font-family: 'Teko', sans-serif; */
+    font-family: 'DotGothic16', sans-serif;
+    word-spacing: 3px;
+    line-height: 1.2em;
+    padding: 10px;
+    width: 90%;
+    font-size: 1.6em;
+    margin: 0 auto;
+}
+
+.scroll {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-bottom: 8px solid var(--secondary);
+    border-right: 8px solid var(--secondary);
+
+    margin-left: 10px;
+    animation: scroll 1.5s 1s ease-in-out infinite alternate;
+}
+
+
+
+#encoder-container h3, #decoder-container h3 {
+    text-align: left;
+    font-size: 2.5em;
+    margin: 0.5em 1.3em;
+}
+
+
+
+ol {
+    margin: 0 4rem;
+    width: 70%;
+    padding: 10px;
+}
+
+li {
+    /* font-family: 'Teko', sans-serif; */
+    font-family: 'DotGothic16', sans-serif;
+    padding: 15px 0;
+    line-height: 1.2em;
+    font-size: 1.5em;
+}
+
+
+
+#back  {
+    margin: 2rem;
+    text-align: center;
+  
+}
+#back a {
+    font-family: 'DotGothic16', sans-serif;
+    padding: 5px;
+    border: 3px outset var(--secondary);
+    border-radius: 10px;
+    margin:0 2rem;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+    color: var(--secondary);
+}
+#back a:active {
+    border: 3px inset var(--secondary);
+}
+#back a:hover {
+    color: var(--brightGreen);
+    border: 3px outset var(--brightGreen);
+}
+
+@keyframes scroll {
+    from {
+        transform: translateY(-25px) rotateZ(45deg);
+    }
+    to {
+        transform: translateY(-5px) rotateZ(45deg);
+    }
+}
+
+@media (max-width: 500px){
+    body {
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 400px){
+    body {
+        font-size: 0.6em;
+    }
+}

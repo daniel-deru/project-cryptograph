@@ -1,0 +1,16 @@
+{
+  "name": "encoder",
+  "version": "1.0.0",
+  "description": "this is the cryptograph app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "daniel de ru",
+  "license": "UNLICENCED",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

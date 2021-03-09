@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./decode/decode.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>decoder</title>
+</head>
+<body>
+    <header>
+        <div id="name">
+            <h4>&lt;cryptograph&gt;</h4>
+        </div>
+
+       <!-- <div id="menu">
+           <i class="fas fa-bars"></i> -->
+        <nav>
+            <!-- <i class="fas fa-times"></i> -->
+            <div id="help"><a href="./help.html">?</a></div>
+
+            <div id="main-button">
+                <button type="button" id="scramble-button" >decrypt</button>
+            </div>
+    
+         
+                <div id="encode-decode-container">
+                    <span >decode</span>
+                     <ul>
+                        <li><a href="./encode.html">encoder</a></li>
+                        <li><a href="./decode.html">decoder</a></li>
+                    </ul>
+                </div>
+        
+                <div id="base">
+                    <span>morse</span>
+                    <ul>
+                        <li tabindex="0">morse</li>
+                        <li tabindex="0">roman</li>
+                        <li tabindex="0">binary</li>
+                        <li tabindex="0">octal</li>
+                        <li tabindex="0">decimal</li>
+                        <li tabindex="0">hex</li>
+                    </ul>
+                </div>
+        </nav>
+       <!-- </div> -->
+       
+        
+       
+    </header>
+
+
+    <div id="container">
+
+        <div>
+            <label for="textarea">message</label>
+            <textarea type="text" id="message" rows="2" cols="35" onkeypress="grow()" onkeyup="grow()" placeholder="enter your message"></textarea>
+        </div>
+
+        <div id="keys">
+            <div>
+                <label for="keys">keys</label>
+            </div>
+
+        <div id="secret-key">
+            <input type="text" id="" placeholder="enter your secret key">
+        </div>
+          
+        </div>
+    </div>
+
+    <div id="result">
+        <span>result:</span>
+        <p><pre id="morse"></pre></p>
+    </div>
+
+    
+
+    <script src="./decode/decode.js"></script>
+</body>
+</html>
