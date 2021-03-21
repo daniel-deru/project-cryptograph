@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./help/help.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>welcome to the cryptograph</h2>
+    
+
+<main>
+    <section id="purpose-section">
+        <h3>purpose <span class="scroll"></span></h3>
+        <p>
+            the purpose of this app is to encrypt and decrypt your messages that you don't want third parties to be able to read.
+            You can encrypt your message with a base of your choice and choose a custom key to prevent others from recognizing your base and then send the encypted message to your friend with the key so they can decrypt it.
+            In order for your friend to decrypt it successfully they must know the base that you use.
+            So in essence your message needs three things to be decrypted: the message, the key and the base.
+        </p>
+    </section>
+
+    <section id="how-section">
+        <h3>how to use <span class="scroll"></span></h3>
+       
+        <div id="encoder-container">
+            <h3>encoder </h3>
+            <ol>
+                <li>Enter your message in the designated message input.</li>
+                <li>Choose a base. By default morse is the base but you can change that by clicking on the morse button and selecting your desired base.</li>
+                <li>Now you can choose custom keys to prevent people from figuring out your base and to further encrypt your message. </li>
+                <li>You don't have to choose custom keys if you don't want to in which case the default keys will be used for example for morse dots and dashes will be used and for binary 1's and 0's will be used.</li>
+                <li>Press the scramble button and watch the magic happen</li>
+                <li>Note that keys need to be unique. The same value cannot be used for more than one key meaning that if you choose letter a to represent a dot you cannot use a for dash as well but the uppercase and lowercase of the same letter is allowed.</li>
+                <li>Custom keys can also not be the same as the default keys meaning if you use morse you cannot use a dot or a dash as custom keys as they are  the default and would cause the algorithm to incorrectly translate your secret message</li>
+            </ol>
+        </div>
+
+
+        <div id="decoder-container">
+            <h3>decoder</h3>
+            <ol>
+                <li>Press the encode button and set it to decode. It is set to encode by default.</li>
+                <li>Decoding your message is really simple. Just enter your encrypted message.</li>
+                <li>Enter your secret custom key. If no custom key was used you can skip this step since the decoder assumes the default keys if no secret key is entered.</li>
+                <li>Choose the base that the message was encrypted in.</li>
+                <li>press the unscramble button to receive your message</li>
+                <li>If the message was wrongly translated it means the encrypted message was wrongly encrypted by your friend.</li>
+            </ol>
+        </div>
+    </section>
+</main>
+
+<div id="back">
+    <a href="./decode.html">decoder</a>
+    <a href="./encode.html">encoder</a>
+</div>
+   
+    <script src="../help/help.js"></script>
+</body>
+</html>
